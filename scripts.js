@@ -24,6 +24,7 @@ function contact() {
   document.getElementById('aboutMe').style.display = 'none';
   document.getElementById('projects').style.display = 'none';
   document.getElementById('contactBox').style.display = 'flex';
+  //document.getElementById('footer').style.bottom = '-100px';
 }
 
 function main() {
