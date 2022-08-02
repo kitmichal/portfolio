@@ -13,14 +13,16 @@
         <h1>Michal Kitowski</h1>
         <nav>
             <ul>
-                <li><a href="#">About Me</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Contact</a></li>
+                <li class="menu" onclick="main()"><a href="#">About Me</a></li>
+                <li class="menu" onclick="main()"><a href="#projects">Projects</a></li>
+                <li class="menu" id="contact" onclick="contact()"><a href="#">Contact</a></li>
+                <button type="button" id="dark_mode" onclick="darkMode()">Dark Mode</button>
+                
             </ul>
         </nav>
     </header>
     <main>
-        <section class="about_me">
+        <section id = "aboutMe" class="about_me">
             <div class="about_me_description">
                 <h2>About Me</h2>
                 <p>Hello, My name is Michal from Bydgoszcz, Poland and I am a beggining Junior Frontend Developer.</p>
@@ -29,22 +31,35 @@
             </div>
             <img src="Cat.png" alt="my_photo">
         </section>
-        <section class="projects">
+        <section id = "projects" class="projects">
             <h2>Projects</h2>
             <div class="my_projects">
-                <div class="project"></div>
-                <div class="project"></div>
-                <div class="project"></div>
-                <div class="project"></div>
-                <div class="project"></div>
-                <div class="project"></div>
+                <a href="#"><div class="project"><img src="1.jpg"><p>Project 1</p></div></a>
+                <a href="#"><div class="project"><img src="2.jpg"><p>Project 2</p></div></a>
+                <a href="#"><div class="project"><img src="3.jpg"><p>Project 3</p></div></a>
+                <a href="#"><div class="project"><img src="4.jpg"><p>Project 4</p></div></a>
+                <a href="#"><div class="project"><img src="5.jpg"><p>Project 5</p></div></a>
+                <a href="#"><div class="project"><img src="6.jpg"><p>Project 6</p></div></a>
 
             </div>
 
         </section>
+
+        <section id="contactBox">
+
+            <h3>Michal Kitowski</h3>
+            <p>email: michalmichal@gmail.com</p>
+            <p>phone number: 111 222 333</p>
+
+        </section>
     </main>
     <footer>
+        
+        
+        
+        
 
+          
     </footer>
 </body>
 </html>
