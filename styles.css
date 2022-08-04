@@ -74,9 +74,9 @@ a:hover{
 
 .project{
     
-    background-color: azure;
+   
     height: 300px;
-    background-color:blanchedalmond;
+    
     
 }
 
@@ -137,4 +137,66 @@ footer{
     border-radius: 25%;
     font-size: 16px;
     letter-spacing: 1px;
+    margin:10px
+}
+
+@media (max-width:1550px){
+    header{
+        flex-direction: column;
+    }
+}
+
+@media (max-width:1300px){
+    .about_me{
+        flex-direction: column-reverse;
+    }
+    header h1{
+        font-size: 48px;
+    }
+    header nav ul li a{
+        font-size: 38px;
+    }
+    body{
+        font-size:38px;
+        width: 60%;
+        text-align: center;
+    }
+    
+}
+@media (max-width:950px){
+    .my_projects{
+        grid-template-columns: 250px 250px; 
+     }
+     
+     header ul li{
+        display:block;
+        margin:10px;
+    }
+    footer{
+        width: 50vh;
+    }
+}
+@media (max-width:720px){
+    body{
+        font-size:38px;
+        width: 60%;
+        text-align: center;
+    }
+    header{
+       flex-direction: column;
+       
+    }
+    header ul li{
+        display:block;
+        margin:10px;
+    }
+
+    .about_me{
+        flex-direction: column-reverse;
+    }
+    .my_projects{
+        grid-template-columns: 250px; 
+     }
+
+    
 }
